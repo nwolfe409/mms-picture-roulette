@@ -14,7 +14,7 @@ client = TwilioRestClient()
 @app.route('/', methods=['GET', 'POST'])
 def send_image():
     if request.method == 'GET':
-        return 'The deployment worked! Now copy your browser URL into the' + \
+        return 'The deployment worked! Not that the program will work' + \
                ' Twilio message text box for your phone number.'
     sender_number = request.form.get('From', '')
     twilio_number = request.form.get('To', '')
